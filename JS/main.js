@@ -37,14 +37,18 @@ const app = createApp({
   },
 
   methods: {
-    printHello() {
-      console.log("Hello!");
+    cancelTask(cancelIndex) {
+      this.todos = this.todos.filter((todo, index) => {
+        if (index != cancelIndex) {
+          return true;
+        } else {
+          return false;
+        }
+      });
     },
   },
 
-  mounted() {
-    this.printHello();
-  },
+  mounted() {},
 });
 
 app.mount("#app");
