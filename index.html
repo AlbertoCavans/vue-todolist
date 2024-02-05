@@ -46,8 +46,18 @@
       <div class="container m-5">
         <h1 class="text-center">Booltodo</h1>
         <ul>
-          <li v-for="todo in todos" class="todo rounded-pill p-3 my-3">
-            {{todo.nameTask}}
+          <li
+            v-for="(todo, index) in todos"
+            :class="(todo.done) ? 'done' : ''"
+            class="todo rounded-pill py-3 px-4 my-3 d-flex justify-content-between"
+          >
+            <span>{{todo.nameTask}}</span>
+            <div>
+              <i
+                @click="cancelTask(index)"
+                class="fa-solid fa-xmark border border-white p-1 rounded"
+              ></i>
+            </div>
           </li>
         </ul>
       </div>
