@@ -19,3 +19,12 @@ Ogni todo sarà un oggetto, formato da due proprietà:
   2.  Cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
 
 ## Procedimento
+
+- Controllare il collegamento fra main.js e index.html con la struttura di base (il collegamento fra index.html verso main.js è già fornito)
+- Inserire un array di objects nel data, dove saranno specificati per ogni objects/todos il nome e lo status
+- Su index.html usare il nome e lo status degli objects appena creati per generare i vari todos
+- Usare un ternario oppure if-else per assegnare la classe che fornisce il testo sbarrato
+- Usare @click e una funzione ad hoc per creare l'opzione che permette di cancellare i todos da eliminare
+- Usare v-model e una funzione dentro @cick per creare un form capace di generare nuovi todos
+- Usare @keyUp e la stessa funziona usata nel punto precedente per abilitare la creazione di nuovi todos anche con il tasto enter
+- Usare (sul testo dei todos) @click e una funzione per cambiare il booleano che regola se il testo dei todos è sbarrato o meno
