@@ -48,3 +48,7 @@ DEBUG--------------------------------- .debug {
   background-color: blue;
   color: white;
 }
+
+.done {
+  text-decoration: line-through;
+}
