@@ -55,6 +55,10 @@ const app = createApp({
         }
       });
     },
+
+    doneUndone(todo) {
+      todo.done = !todo.done;
+    },
   },
 
   mounted() {},
