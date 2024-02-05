@@ -33,10 +33,19 @@ const app = createApp({
           done: true,
         },
       ],
+
+      todo: {
+        nameTask: "",
+        done: false,
+      },
     };
   },
 
   methods: {
+    newTask() {
+      this.todos.push({ ...this.todo });
+    },
+
     cancelTask(cancelIndex) {
       this.todos = this.todos.filter((todo, index) => {
         if (index != cancelIndex) {
